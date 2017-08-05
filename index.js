@@ -3,16 +3,13 @@ var HTMLToPDF, htmlToPDF;
 HTMLToPDF = require('html5-to-pdf');
 
 htmlToPDF = new HTMLToPDF({
-  inputPath: '../test.html',
-  outputPath: 'divya.pdf',
+  inputPath: './test/test.html',
+  outputPath: './tmp/out.pdf',
+  template: 'htmlbootstrap',
   include: [
    {
     "type": "css",
     "filePath": "../test.css"
-   },
-   {
-    "type": "css",
-    "filePath": "bootstrap.min.css"
    }
   ],
   options: {
@@ -25,6 +22,9 @@ htmlToPDF.build((function(_this) {
   return function(error) {
     if (error != null) {
       throw error;
+    }
+    else {
+	console.log('output generated: ' + outputPath);
     }
   };
 })(this));
