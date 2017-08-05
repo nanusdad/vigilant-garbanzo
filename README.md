@@ -12,3 +12,5 @@ npm install
 node index.js
 
 ```
+
+* Output generated for test in tmp/out.pdf

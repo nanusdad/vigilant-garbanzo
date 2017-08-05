@@ -9,7 +9,7 @@ htmlToPDF = new HTMLToPDF({
   include: [
    {
     "type": "css",
-    "filePath": "../test.css"
+    "filePath": "./test/test.css"
    }
   ],
   options: {
