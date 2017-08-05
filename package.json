@@ -1,0 +1,14 @@
+{
+  "name": "html2pdftest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Arun Zechariah",
+  "license": "ISC",
+  "dependencies": {
+    "html5-to-pdf": "^2.2.4"
+  }
+}
