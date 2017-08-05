@@ -4,7 +4,21 @@ HTMLToPDF = require('html5-to-pdf');
 
 htmlToPDF = new HTMLToPDF({
   inputPath: '../test.html',
-  outputPath: 'divya.pdf'
+  outputPath: 'divya.pdf',
+  include: [
+   {
+    "type": "css",
+    "filePath": "../test.css"
+   },
+   {
+    "type": "css",
+    "filePath": "bootstrap.min.css"
+   }
+  ],
+  options: {
+    "landscape": false,
+    "pageSize": "Legal"
+  }
 });
 
 htmlToPDF.build((function(_this) {
